@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Save the official NCH Healthcare System SMS contact to your phone. Verify messages from short code 87071.">
+    <meta name="theme-color" content="#3C1053">
+    <meta name="robots" content="noindex, nofollow">
+    <title>NCH Healthcare System | Save Our Contact</title>
+    <link rel="canonical" href="https://nchmd.org/87071">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --nch-violet: #3C1053;
+            --nch-violet-light: #5a2d7a;
+            --nch-violet-dark: #2a0b3b;
+            --nch-cream: #faf9f7;
+            --nch-warm-white: #ffffff;
+            --nch-text: #2d2d2d;
+            --nch-text-muted: #5a5a5a;
+            --nch-border: #e8e4e0;
+            --nch-success: #1a7a4c;
+            --nch-success-bg: #e8f5ee;
+            --shadow-soft: 0 2px 8px rgba(60, 16, 83, 0.08);
+            --shadow-medium: 0 4px 20px rgba(60, 16, 83, 0.12);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 16px;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(180deg, var(--nch-violet) 0%, var(--nch-violet-dark) 100%);
+            min-height: 100vh;
+            color: var(--nch-text);
+            line-height: 1.6;
+        }
+
+        .page-wrapper {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        .header {
+            background: var(--nch-violet);
+            padding: 1.5rem 1rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: var(--nch-cream);
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+        }
+
+        .logo-container {
+            margin-bottom: 1rem;
+        }
+
+        .logo {
+            height: 48px;
+            width: auto;
+        }
+
+        .org-name {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.9);
+            letter-spacing: 0.02em;
+            margin-top: 0.5rem;
+        }
+
+        .short-code-display {
+            margin-top: 1.25rem;
+        }
+
+        .short-code-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.25rem;
+        }
+
+        .short-code-number {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 3rem;
+            font-weight: 400;
+            color: #ffffff;
+            letter-spacing: 0.05em;
+            line-height: 1;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            background: var(--nch-cream);
+            padding: 2rem 1rem 3rem;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--nch-warm-white);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            box-shadow: var(--shadow-soft);
+            border: 1px solid var(--nch-border);
+        }
+
+        .card-title {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 1.25rem;
+            color: var(--nch-violet);
+            margin-bottom: 0.75rem;
+            line-height: 1.3;
+        }
+
+        .card p {
+            color: var(--nch-text-muted);
+            font-size: 0.9375rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Save Contact Card - Primary CTA */
+        .save-contact-card {
+            background: linear-gradient(135deg, var(--nch-violet) 0%, var(--nch-violet-light) 100%);
+            border: none;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 1.5rem;
+        }
+
+        .save-contact-card .card-title {
+            color: #ffffff;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .save-contact-card p {
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 1.5rem;
+        }
+
+        .save-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: #ffffff;
+            color: var(--nch-violet);
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 280px;
+        }
+
+        .save-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .save-btn:active {
+            transform: translateY(0);
+        }
+
+        .save-btn svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        /* Device-specific instructions */
+        .instructions-card {
+            display: none;
+        }
+
+        .instructions-card.active {
+            display: block;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: steps;
+        }
+
+        .step-list li {
+            counter-increment: steps;
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 0.9375rem;
+            color: var(--nch-text);
+        }
+
+        .step-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .step-list li::before {
+            content: counter(steps);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.75rem;
+            height: 1.75rem;
+            background: var(--nch-violet);
+            color: #ffffff;
+            font-size: 0.8125rem;
+            font-weight: 600;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Collapsible sections */
+        .collapsible {
+            border-top: 1px solid var(--nch-border);
+            margin-top: 1rem;
+            padding-top: 1rem;
+        }
+
+        .collapsible:first-of-type {
+            border-top: none;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .collapsible-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem 0;
+            text-align: left;
+        }
+
+        .collapsible-title {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.9375rem;
+            font-weight: 600;
+            color: var(--nch-violet);
+        }
+
+        .collapsible-icon {
+            width: 20px;
+            height: 20px;
+            color: var(--nch-violet);
+            transition: transform 0.3s ease;
+        }
+
+        .collapsible.open .collapsible-icon {
+            transform: rotate(180deg);
+        }
+
+        .collapsible-content {
+            display: none;
+            padding-top: 0.75rem;
+        }
+
+        .collapsible.open .collapsible-content {
+            display: block;
+        }
+
+        .collapsible-content p {
+            font-size: 0.875rem;
+            color: var(--nch-text-muted);
+            margin-bottom: 0.75rem;
+        }
+
+        .collapsible-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Opt-out box */
+        .opt-out-box {
+            background: var(--nch-cream);
+            border-radius: var(--radius-sm);
+            padding: 1rem;
+            margin-top: 0.75rem;
+        }
+
+        .opt-out-box code {
+            display: inline-block;
+            background: var(--nch-violet);
+            color: #ffffff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-family: 'DM Sans', monospace;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--nch-violet-dark);
+            padding: 1.5rem 1rem;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 0.8125rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-bottom: 0.5rem;
+        }
+
+        .footer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        /* Accessibility */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Focus states */
+        .save-btn:focus,
+        .collapsible-toggle:focus {
+            outline: 2px solid var(--nch-violet);
+            outline-offset: 2px;
+        }
+
+        .save-contact-card .save-btn:focus {
+            outline-color: #ffffff;
+        }
+
+        /* Responsive */
+        @media (min-width: 600px) {
+            .header {
+                padding: 2rem 1.5rem 2.5rem;
+            }
+
+            .logo {
+                height: 56px;
+            }
+
+            .short-code-number {
+                font-size: 3.5rem;
+            }
+
+            .main-content {
+                padding: 2.5rem 1.5rem 4rem;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+
+            .save-contact-card {
+                padding: 2.5rem 2rem;
+            }
+        }
+
+        /* Subtle animation on load */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            animation: fadeInUp 0.4s ease-out;
+        }
+
+        .card:nth-child(2) { animation-delay: 0.1s; }
+        .card:nth-child(3) { animation-delay: 0.2s; }
+        .card:nth-child(4) { animation-delay: 0.3s; }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="logo-container">
+                <img src="white-logo.png" 
+                     alt="NCH Logo" 
+                     class="logo"
+                     onerror="this.style.display='none'">
+                <p class="org-name">NCH Healthcare System, Inc.</p>
+            </div>
+            <div class="short-code-display">
+                <p class="short-code-label">Official SMS Short Code</p>
+                <p class="short-code-number">87071</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="container">
+                <!-- Primary CTA -->
+                <div class="card save-contact-card">
+                    <h1 class="card-title">Save Our Contact</h1>
+                    <p>Add NCH MyChart Messages to your contacts so you always know when a text is from us.</p>
+                    <a href="NCH-MyChart-Messages-87071.vcf" 
+                       class="save-btn" 
+                       id="saveContactBtn"
+                       download="NCH-MyChart-Messages-87071.vcf">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                            <polyline points="17 21 17 13 7 13 7 21"/>
+                            <polyline points="7 3 7 8 15 8"/>
+                        </svg>
+                        <span id="btnText">Save Contact</span>
+                    </a>
+                </div>
+
+                <!-- iOS Instructions -->
+                <div class="card instructions-card" id="ios-instructions">
+                    <h2 class="card-title">How to Save on iPhone</h2>
+                    <ol class="step-list">
+                        <li>Tap the <strong>Save Contact</strong> button above</li>
+                        <li>When the contact card appears, tap <strong>Create New Contact</strong> (or Add to Existing Contact)</li>
+                        <li>Tap <strong>Done</strong> in the top right corner</li>
+                    </ol>
+                    <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--nch-text-muted);">
+                        That's it! Future messages from 87071 will now show as "NCH MyChart Messages."
+                    </p>
+                </div>
+
+                <!-- Android Instructions -->
+                <div class="card instructions-card" id="android-instructions">
+                    <h2 class="card-title">How to Save on Android</h2>
+                    <ol class="step-list">
+                        <li>Tap the <strong>Save Contact</strong> button above</li>
+                        <li>Your phone will download the contact file</li>
+                        <li>Open the downloaded file, or go to your <strong>Contacts</strong> app</li>
+                        <li>Tap <strong>Save</strong> or <strong>Import</strong> to add the contact</li>
+                    </ol>
+                    <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--nch-text-muted);">
+                        That's it! Future messages from 87071 will now show as "NCH MyChart Messages."
+                    </p>
+                </div>
+
+                <!-- Desktop Instructions -->
+                <div class="card instructions-card" id="desktop-instructions">
+                    <h2 class="card-title">Visiting from a Computer?</h2>
+                    <p>This page works best on your mobile phone. To save this contact:</p>
+                    <ol class="step-list">
+                        <li>Open this page on your iPhone or Android device</li>
+                        <li>Visit <strong>nchmd.org/87071</strong> in your mobile browser</li>
+                        <li>Tap the Save Contact button to add it to your phone</li>
+                    </ol>
+                    <p style="margin-top: 1rem; font-size: 0.875rem; color: var(--nch-text-muted);">
+                        Alternatively, you can download the contact file below and transfer it to your phone.
+                    </p>
+                </div>
+
+                <!-- FAQ Section -->
+                <div class="card">
+                    <div class="collapsible open">
+                        <button class="collapsible-toggle" aria-expanded="true">
+                            <span class="collapsible-title">Why am I receiving these messages?</span>
+                            <svg class="collapsible-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="collapsible-content">
+                            <p>You may receive text messages from NCH Healthcare System for appointment reminders, billing notifications, prescription alerts, and important health information through MyChart.</p>
+                            <p>This short code (87071) is our official messaging number. By saving this contact, you can easily verify that messages are genuinely from NCH.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapsible">
+                        <button class="collapsible-toggle" aria-expanded="false">
+                            <span class="collapsible-title">How do I opt out of messages?</span>
+                            <svg class="collapsible-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="collapsible-content">
+                            <p>You can stop receiving text messages from NCH at any time.</p>
+                            <div class="opt-out-box">
+                                <p style="margin-bottom: 0.5rem;"><strong>To opt out:</strong></p>
+                                <p>Reply <code>STOP</code> to <strong>87071</strong></p>
+                            </div>
+                            <p style="margin-top: 0.75rem;">You will receive a confirmation message and will no longer receive SMS messages from this number. Note that opting out may mean missing important appointment reminders and health notifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="collapsible">
+                        <button class="collapsible-toggle" aria-expanded="false">
+                            <span class="collapsible-title">Your Privacy</span>
+                            <svg class="collapsible-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </button>
+                        <div class="collapsible-content">
+                            <p>This page does not collect, store, or transmit your phone number or any personal information. It simply provides a downloadable contact file for your convenience.</p>
+                            <p>For more information about how NCH Healthcare System handles your personal health information, please visit our <a href="https://www.nchmd.org/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 NCH Healthcare System, Inc.</p>
+            <p>Naples, Florida | <a href="https://www.nchmd.org" target="_blank" rel="noopener">nchmd.org</a></p>
+        </footer>
+    </div>
+
+    <script>
+        (function() {
+            'use strict';
+
+            // Simple device detection
+            function getDeviceType() {
+                const ua = navigator.userAgent || navigator.vendor || window.opera;
+                
+                // iOS detection
+                if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
+                    return 'ios';
+                }
+                
+                // Android detection
+                if (/android/i.test(ua)) {
+                    return 'android';
+                }
+                
+                // Desktop/Everything else
+                return 'desktop';
+            }
+
+            // Show appropriate instructions
+            function showInstructions() {
+                const deviceType = getDeviceType();
+                const instructionsId = deviceType + '-instructions';
+                const instructionsEl = document.getElementById(instructionsId);
+                
+                if (instructionsEl) {
+                    instructionsEl.classList.add('active');
+                }
+
+                // Update button text for desktop
+                if (deviceType === 'desktop') {
+                    const btnText = document.getElementById('btnText');
+                    if (btnText) {
+                        btnText.textContent = 'Download Contact File';
+                    }
+                }
+            }
+
+            // Collapsible functionality
+            function initCollapsibles() {
+                const toggles = document.querySelectorAll('.collapsible-toggle');
+                
+                toggles.forEach(function(toggle) {
+                    toggle.addEventListener('click', function() {
+                        const collapsible = this.closest('.collapsible');
+                        const isOpen = collapsible.classList.contains('open');
+                        
+                        // Update aria-expanded
+                        this.setAttribute('aria-expanded', !isOpen);
+                        
+                        // Toggle open state
+                        collapsible.classList.toggle('open');
+                    });
+                });
+            }
+
+            // iOS deep link attempt (contacts:// scheme)
+            // Note: This is experimental and may not work on all iOS versions
+            function setupIOSDeepLink() {
+                const deviceType = getDeviceType();
+                if (deviceType !== 'ios') return;
+
+                const saveBtn = document.getElementById('saveContactBtn');
+                if (!saveBtn) return;
+
+                // On iOS, the VCF download should trigger the native contact import dialog
+                // No additional deep link handling needed - iOS handles .vcf files natively
+            }
+
+            // Initialize
+            document.addEventListener('DOMContentLoaded', function() {
+                showInstructions();
+                initCollapsibles();
+                setupIOSDeepLink();
+            });
+        })();
+    </script>
+</body>
+</html>
